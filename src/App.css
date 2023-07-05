@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
+/* Universal style */
+*,
+::before,
+::after {
+    padding: 0px;
+    margin: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* FirstSection starts here */
+.Form {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 25%;
+    height: 2.5em;
+    background-color: whitesmoke;
+    /* padding-right: 10px; */
+    /* background-color: pink; */
+    /* margin-top: 30rem; */
+    /* height: 10px; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.FirstInput {
+    width: 18em;
+    height: 2.9em;
+    border: none;
+    text-decoration: none;
+    padding-right: 10px;
+    margin-right: 40px;
+    padding-left: 8px;
+    outline: none;
+
+    /* border: 1px solid black; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.FirstIcon,
+::placeholder {
+    padding-left: 7px;
+    color: black;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
 }
 
-.App-link {
-  color: #61dafb;
+.FirstIcon {
+    /* z-index: 1; */
+    position: absolute;
+    top: 9px;
+    right: 5px;
+    color: rgb(69, 3, 69);
+    /* font-size: 22px; */
+    /* background-color: red; */
+    height: 1.3rem;
+    width: 2rem;
+    cursor: pointer;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.AddTodo {
+    display: flex;
+    flex-direction: row;
+}
+
+.TodosClass {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 20px;
+    padding-top: 5rem;
+    /* background-color: red; */
+}
+
+/* SecondSection goes here */
+.SecondIcon {
+    color: whitesmoke;
+    background-color: forestgreen;
+    font-size: 1px;
+    height: 2.5rem;
+    width: 2rem;
+}
+
+.SecondInput {
+    width: 5em;
+    height: 3em;
+    border: none;
+    padding-left: 9px;
+    color: black;
+    font-weight: 400;
+    padding-left: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    outline: none;
+    padding-right: 5px;
+
+}
+
+.SecondInput ::placeholder {
+    font-size: 28px;
+}
+
+
+
+.SectionContainer {
+    overflow: auto;
+    height: 60vh;
+}
+
+.Todos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3rem;
+    /* overflow: auto; */
+}
+
+.ThirdInput {
+    width: 15em;
+    height: 1.7em;
+    border: none;
+    padding-left: 9px;
+    outline: none;
+    background-color: white;
+    padding-top: 12px;
+}
+
+
+
+.ThirdIcon {
+    color: whitesmoke;
+    background-color: rgb(13, 13, 150);
+    font-size: 2px;
+    height: 2.5rem;
+    width: 2rem;
+    /* color: red; */
+
+}
+
+.FourthIcon {
+    color: whitesmoke;
+    background-color: purple;
+    font-size: 2px;
+    height: 2.5rem;
+    width: 2rem;
 }
